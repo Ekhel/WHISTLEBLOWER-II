@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/img/logo/nokenku.png">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/login/images/icons/faviconp.png">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/login/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -32,13 +32,12 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(<?php echo base_url()?>assets/login/images/bg-03.jpg);">
+				<div class="login100-form-title" style="background-image: url(assets/login/images/bg-01.jpg);">
 					<span class="login100-form-title-1">
-						Applikasi Menajemen Surat (AMS)
+						BACKEND S P E
 					</span>
 				</div>
-        <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
-				<form class="login100-form validate-form" method="post" action="<?php echo base_url()?>auth/login_proses">
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url()?>Auth/login_proses">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Username</span>
 						<input class="input100" type="text" name="nama" placeholder="Enter username">
@@ -72,6 +71,7 @@
 						</button>
 					</div>
 				</form>
+				<?php echo form_close();?>
 			</div>
 		</div>
 	</div>

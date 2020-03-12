@@ -1,0 +1,59 @@
+body{
+     background: url(https://qualita-indonesia.net/resources/themes/template-simple/images/login-bg.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     margin: 0; padding: 0;
+ }
+ .footer{
+     position: fixed;
+     width: 100%;
+     background: #000;
+     color: #fff;
+     bottom: 0px;
+     font-family: calibri, sans-serif, arial;
+     font-size: 12px;
+     text-align: center;
+     padding: 8px;
+     opacity: 0.5;
+ }
+
+ .container{
+     position: fixed;
+     width: 670px;
+     top:50px; bottom: 80px; left:100px;
+ }
+
+ .container td{
+     font-family: calibri, sans-serif;
+     color: #fff;
+     font-size: 21px;
+ }
+
+ .container .left{
+     background: url(https://qualita-indonesia.net/resources/themes/template-simple/images/bg-transparent-black.png);
+     padding: 20px;
+ }
+
+ .container .right{
+     background: url(https://qualita-indonesia.net/resources/themes/template-simple/images/bg-transparent-white.png);
+     padding: 60px;
+     color: #333;
+ }
+
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background: #1990db;
+    padding: 7px;
+    font-weight: bold;
+    color:#fff;
+}    

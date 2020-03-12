@@ -12,7 +12,7 @@ class auth extends MX_Controller{
 
   public function index()
   {
-    $data['title'] = 'Login | AMS';
+    $data['title'] = 'Login | S P E';
     $this->load->view('login',$data);
   }
   function login_proses()
@@ -32,7 +32,7 @@ class auth extends MX_Controller{
 				$data['login'] = TRUE;
 				$this->session->set_userdata($data);
         if ($this->session->userdata('level')=='1'){
-				redirect('Home');
+				redirect('dashboard');
 			  }
   			elseif ($this->session->userdata('level')=='2'){
           //helper_log("login", "Login ke applikasi");
