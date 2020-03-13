@@ -67,3 +67,5 @@
 * **Jumat 13 Maret 2020**
   - Baut Table pengaduan(tb_aduan) [Solved]
   - Buat Fungsi Kirim Aduan (Create) [Solved]
+  - Buat CRUD Distrik [Not Solved]
+  - Buat CRUD Kampung [Not Solved]

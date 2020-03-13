@@ -7,7 +7,7 @@
     <title><?php echo $title ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/backend/img/logo/kemenkes.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url()?>assets/backend/img/faviconp.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/backend/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>assets/backend/css/font-awesome.min.css">
@@ -34,7 +34,7 @@
         <div class="left-sidebar-pro">
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <a href="<?php echo base_url()?>Home/beranda/1"><img src="<?php echo base_url()?>assets/backend/img/message/1.png" alt="" />
+                    <a href="<?php echo base_url()?>Home/beranda/1"><img src="<?php echo base_url()?>assets/backend/img/kabjayapura.png" alt="" />
                     </a>
                     <h3 class="uppercase">S P E </h3>
                     <p><?php echo $this->session->userdata('nik') ?></p>
@@ -65,25 +65,16 @@
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">API <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
                                             <div role="menu" class="dropdown-menu animated flipInX">
                                                 <a href="<?php echo base_url()?>Api/Dokumentasi" class="dropdown-item">Dokumentasi API </a>
-                                                <a href="<?php echo base_url()?>Api/pasien" target="_blank" class="dropdown-item">Pasien</a>
-                                                <a href="<?php echo base_url()?>Api/dokter" target="_blank" class="dropdown-item">Dokter</a>
+
                                             </div>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">GraphQL <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
                                             <div role="menu" class="dropdown-menu animated flipInX">
                                                 <a href="#" class="dropdown-item">Dokumentasi GraphQL </a>
-                                                <a href="#" class="dropdown-item">Dokter</a>
-                                                <a href="#" class="dropdown-item">Pasien</a>
+                                            </div>
+                                        </li>
 
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">Bridge <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
-                                            <div role="menu" class="dropdown-menu animated flipInX">
-                                                <a href="#" class="dropdown-item">BPJS</a>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
