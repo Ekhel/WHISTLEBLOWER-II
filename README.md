@@ -16,8 +16,8 @@
   - MariaDB
 
 * Template :
-  - Frontend (Argon Frontend Bootstrap)
-  - Backend (Argon Dashboard Backend)
+  - Frontend (Safario)
+  - Backend (Admin Pro +)
 
 -----------------------------------------------------------------------------------
 
@@ -63,3 +63,7 @@
 * **Jumat 14 Februari 2020**
   - Buat Fungsi CRUD Distrik [NotSolved]
   - Buat Fungsi CRUD Kampung [NotSolved]
+
+* **Jumat 13 Maret 2020**
+  - Baut Table pengaduan(tb_aduan) [Solved]
+  - Buat Fungsi Kirim Aduan (Create) [Solved]
