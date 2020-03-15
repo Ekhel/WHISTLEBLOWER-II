@@ -65,7 +65,12 @@
   - Buat Fungsi CRUD Kampung [NotSolved]
 
 * **Jumat 13 Maret 2020**
-  - Baut Table pengaduan(tb_aduan) [Solved]
+  - Buat Table pengaduan(tb_aduan) [Solved]
   - Buat Fungsi Kirim Aduan (Create) [Solved]
-  - Buat CRUD Distrik [Not Solved]
-  - Buat CRUD Kampung [Not Solved]
+  - Buat CRUD Distrik [Solved]
+  - Buat CRUD Kampung [Solved]
+
+* **Minggu 15 Maret 2020**
+  - Buat CRUD Pengaduan [Not Solved]
+  - Buat View Pengaduan [Solved]
+  - Buat Notif Aduan Masuk [Solved]
