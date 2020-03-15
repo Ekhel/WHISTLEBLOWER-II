@@ -1,3 +1,5 @@
+<script src="<?php echo base_url()?>assets/backend/js/jquery-1.11.3.min.js"></script>
+
 <div class="breadcome-area mg-b-30 small-dn">
     <div class="container-fluid">
         <div class="row">
@@ -39,7 +41,7 @@
                         <div class="main-sparkline13-hd">
                             <h1>Data <span class="table-project-n">Kampung</span></h1>
                             <div class="sparkline13-outline-icon">
-                                <span><a href="#createkampung" title="Tambah Data" class="btn btn-primary btn-sm"><i class="fa fa-plus-circle"></i></a></i></span>
+                                <span><a href="#createkampung" data-toggle="modal" title="Tambah Data" class="btn btn-primary btn-sm"><i class="fa fa-plus-circle"></i></a></i></span>
                             </div>
                         </div>
                     </div>
@@ -76,15 +78,15 @@
                                     <td><?php echo $item->sekam ?></td>
                                     <td><?php echo $item->kontak ?></td>
                                     <td>
-                                      <a class="btn btn-default btn-xs" type="button" title="Edit" href="#updatekampung" data-toggle="modal" onclick="update(
+                                      <a class="btn btn-default btn-xs" type="button" title="Edit" href="#updatekampung" data-toggle="modal" onclick="update_kampung(
                                         '<?php echo $item->id_kampung ?>',
                                         '<?php echo $item->id_distrik ?>',
                                         '<?php echo $item->kampung ?>',
                                         '<?php echo $item->kepala_kamp ?>',
-                                        '<?php echo $iitem->sekam ?>',
+                                        '<?php echo $item->sekam ?>',
                                         '<?php echo $item->kontak ?>',
                                       )"><i class="fa fa-edit"></i></a>
-                                      <a href="#delete_stock" class="btn btn-xs btn-danger" data-toggle="modal" data-id="<?php echo $item->id_kampung ?>" title="Hapus Item"><i class="fa fa-trash"></i></a>
+                                      <a href="<?php echo base_url()?>data_master/delete_kampung/<?php echo $item->id_kampung ?>" class="btn btn-xs btn-danger" title="Hapus"><i class="fa fa-trash"></i></a>
                                     </td>
                                   </tr>
                                   <?php } ?>
@@ -103,7 +105,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title" id=""><i class="fa fa-edit"></i> Tambah Kampung</h4>
+				<h4 class="modal-title" id=""><i class="fa fa-plus-circle"></i> Tambah Kampung</h4>
 			</div>
 			<div class="modal-body">
         <?php $this->load->view('kampung/c-kampung'); ?>
@@ -114,3 +116,32 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal fade" id="updatekampung" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id=""><i class="fa fa-edit"></i> Update Kampung </h4>
+			</div>
+			<div class="modal-body">
+        <?php $this->load->view('kampung/u-kampung'); ?>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+  function update_kampung(id_kampung,id_distrik,kampung,kepala_kamp,sekam,kontak){
+    $('#xid_kampung').val(id_kampung);
+    $('#xid_distrik').val(id_distrik);
+    $('#xkampung').val(kampung);
+    $('#xkepala_kamp').val(kepala_kamp);
+    $('#xsekam').val(sekam);
+    $('#xkontak').val(kontak);
+  }
+</script>

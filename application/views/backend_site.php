@@ -81,6 +81,7 @@
                             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                 <div class="header-right-info">
                                     <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                        <?php $this->load->view('notif') ?>
                                         <li class="nav-item">
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                 <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
@@ -270,7 +271,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-copy-right">
-                        <p>Copyright &#169; 2019 Poliklinik RSUD BIAK</a></p>
+                        <p>Copyright &#169; 2020 INSPEKTORAT KAB. JAYAPURA</a></p>
                     </div>
                 </div>
             </div>

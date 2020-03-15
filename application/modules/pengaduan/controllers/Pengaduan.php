@@ -12,7 +12,7 @@ class pengaduan extends MX_Controller{
   public function index()
   {
     $data['title'] = 'Form Pengaduan';
-    $this->template->load('frontend_site','r-form-pengaduan',$data);
+    $this->template->load('frontend_site','r-pengaduan',$data);
   }
   function create_aduan()
   {
@@ -43,5 +43,19 @@ class pengaduan extends MX_Controller{
 									<strong>Success !</strong> Berhasil Mengirim Data!
 							</div>");
     redirect('pengaduan');
+  }
+  public function aduan()
+  {
+    $data['title'] = 'Aduan Masuk';
+    $data['aduan'] = $this->M_pengaduan->aduan();
+
+    $this->template->load('backend_site','r-aduan',$data);
+  }
+  public function detail_aduan($id_aduan)
+  {
+    $data['title'] = 'Detail Pengaduan';
+    $data['detail'] = $this->M_pengaduan->detail_aduan($id_aduan);
+
+    $this->template->load('backend_site','detail-aduan',$data);
   }
 }

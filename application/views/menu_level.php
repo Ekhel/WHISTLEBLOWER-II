@@ -16,7 +16,7 @@
         </li>
         <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-book"></i> <span class="mini-dn">Pengaduan</span> <span class="indicator-right-menu mini-dn"><i class="fa indicator-mn fa-angle-left"></i></span></a>
             <div role="menu" class="dropdown-menu left-menu-dropdown animated flipInX">
-                <a href="#">Aduan Masuk</a>
+                <a href="<?php echo base_url()?>pengaduan/aduan">Aduan Masuk</a>
                 <a href="#">Konfirmasi</a>
 
             </div>
