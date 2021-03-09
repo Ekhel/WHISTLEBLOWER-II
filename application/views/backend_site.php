@@ -96,7 +96,6 @@
                                             </ul>
                                         </li>
                                         <li class="nav-item nav-setting-open"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa fa-tasks"></i></a>
-
                                             <div role="menu" class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated flipInX">
                                             </div>
                                         </li>
@@ -266,17 +265,17 @@
         </div>
     </div>
     <!-- Footer Start-->
-    <div class="footer-copyright-area">
+    <!--<div class="footer-copyright-area">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-copy-right">
-                        <p>Copyright &#169; 2020 INSPEKTORAT KAB. JAYAPURA</a></p>
+                        <p>Copyright &#169; 2019 INSPEKTORAT KAB. JAYAPURA</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>!-->
     <!-- Footer End-->
 
     <script src="<?php echo base_url()?>assets/backend/js/vendor/jquery-1.11.3.min.js"></script>
@@ -293,7 +292,6 @@
     <script src="<?php echo base_url()?>assets/backend/js/peity/peity-active.js"></script>
     <script src="<?php echo base_url()?>assets/backend/js/sparkline/jquery.sparkline.min.js"></script>
     <script src="<?php echo base_url()?>assets/backend/js/sparkline/sparkline-active.js"></script>
-
     <script src="<?php echo base_url()?>assets/backend/js/data-table/bootstrap-table.js"></script>
     <script src="<?php echo base_url()?>assets/backend/js/data-table/tableExport.js"></script>
     <script src="<?php echo base_url()?>assets/backend/js/data-table/data-table-active.js"></script>

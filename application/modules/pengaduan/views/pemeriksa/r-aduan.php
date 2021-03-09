@@ -26,6 +26,14 @@
 
 <div class="row">
     <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="alert alert-warning">
+                <h4><i class="fa fa-info"></i> Perhatian !! Aduan Yang masuk dalam Halaman ini adalah Aduan yang telah diverivikasi oleh Admin!!</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
         <div class="col-lg-12">
             <div class="sparkline8-list shadow-reset mg-tb-30">
                 <div class="sparkline8-hd">
@@ -53,12 +61,8 @@
                             <p class="comment-clock"><i class="fa fa-clock-o"></i> <?php echo $item->date_created ?></p>
 
                             <br/>
-
-                            <a href="#" class="btn btn-xs btn-default" title="tandai sudah di baca"><i class="fa fa-check"></i></a>
-                            <a href="<?php echo base_url()?>pengaduan/detail_aduan/<?php echo $item->id_aduan ?>" class="btn btn-xs btn-default" title="Detail Aduan"><i class="fa fa-list"></i></a>
-                            <a href="#" class="btn btn-xs btn-default" title="Lanjutkan ke Pemeriksa"><i class="fa fa-bookmark"></i></a>
+                            <a href="<?php echo base_url()?>pengaduan/detail_aduan_pemeriksa/<?php echo $item->id_aduan ?>" class="btn btn-xs btn-default" title="Detail Aduan"><i class="fa fa-list"></i></a>
                             <a href="#" class="btn btn-xs btn-default" title="Hapus Aduan"><i class="fa fa-trash"></i></a>
-                            <a href="#" class="btn btn-xs btn-default" title="Edit Aduan"><i class="fa fa-edit"></i></a>
                             <!--<button class="comment-setting" data-toggle="collapse" data-target="#adminpro-demo1">...</button>
                             <ul id="adminpro-demo1" class="comment-action-st collapse">
                                 <li><a href="#">Detail Aduan</a>

@@ -137,11 +137,11 @@
                         <div class="col-lg-12">
                             <div class="view-mail-reply-list">
                                 <ul class="view-mail-forword">
-                                    <?php if ($detail['status_pemeriksa'] != 1){?>
-                                        <li><a href="#teruskan_aduan" data-toggle="modal"><i class="fa fa-reply"></i> Teruskan Pemeriksa</a></li>
-                                        <li><a class="compose-draft-bt" href="javascript:window.print()"><i class="fa fa-backward"></i> Kembalikan Ke Pengadu</a></li>
-                                        <li><a class="compose-discard-bt" href="#"><i class="fa fa-trash-o"></i> Hapus</a></li>
+                                    <?php if ($detail['status_administrasi'] != 1){?>
+                                        <li><a class="compose-draft-bt" href="#kembali" data-toggle="modal"><i class="fa fa-backward"></i> Kembalikan Ke Pengadu</a></li>
+                                        <li><a class="compose-success-bt" href="#teruskan" data-toggle="modal"><i class="fa fa-forward"></i> Teruskan Ke Administrsi</a></li>
                                     <?php } ?>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -160,7 +160,9 @@
                         <hr/>
                     </div>
                     <br />
-                    <?php foreach($status as $item){?>
+                    <?php foreach($status as $item){
+                        $keterangan = $item->ket;
+                    ?>
                     <div class="author-permissio-wrap shadow-reset">
                         <div class="author-per-img">
                             <a href="#"><img src="<?php echo base_url()?>assets/backend/img/icon/<?php echo $item->icon ?>" alt="" />
@@ -169,7 +171,11 @@
                                 <br />
                                 <text><?php echo $item->status_aduan ?></text> <br />
                                 <text>Tanggal : <?php echo $item->tanggal ?></text>
-                                <a id="group1" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group" href="#">Admin</a>
+
+                                <?php if($item->id_ket_status == 3){?>
+                                    <!--<a id="group1" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group" href="#">Admin</a>!-->
+                                    <a class="label label-warning" data-toggle="modal" href="#keterangan" title="Alasan dikembalikan !"><i class="fa fa-info"></i></a>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
@@ -180,19 +186,54 @@
         </div>
     </div>
 </div>
-
 <br/>
 
-<div class="modal fade" id="teruskan_aduan" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+<div class="modal fade" id="teruskan" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title" id=""><i class="fa fa-backward"></i> Teruskan Pengaduan Ke Pemeriksa</h4>
+				<h4 class="modal-title" id=""><i class="fa fa-forward"></i> Teruskan Aduan ke administrasi</h4>
 			</div>
 			<div class="modal-body">
-                <label class="alert alert-warning">ANDA AKAN MENERUSKAN PENGADUAN INI KE PEMERIKSA ?</label>
-                <?php $this->load->view('pengaduan/teruskan'); ?>
+                <label class="alert alert-success">ANDA AKAN MENERUSKAN PENGADUAN INI KE BAG. ADMINISTRASI GUNA MEMBUAT DISPOSISI ?</label>
+                <?php $this->load->view('pemeriksa/teruskan'); ?>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="kembali" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id=""><i class="fa fa-backward"></i> Kembalikan Aduan</h4>
+			</div>
+			<div class="modal-body">
+                <label class="alert alert-warning">ANDA AKAN MENGEMBALIKAN ADUAN INI KE PENGADU ?</label>
+                <?php $this->load->view('pemeriksa/kembali'); ?>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="keterangan" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id=""><i class="fa fa-backward"></i> Alasan Aduan dikembalikan !!</h4>
+			</div>
+			<div class="modal-body">
+                <label class="alert alert-warning"><?php echo $keterangan ?></label>
+                <?php $this->load->view('pemeriksa/kembali'); ?>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>

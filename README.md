@@ -4,7 +4,6 @@
 
 ![Imgur](https://i.imgur.com/kuQlc7v.png)
 
-
 ## System Requirements :
 * Bahasa :
   - PHP

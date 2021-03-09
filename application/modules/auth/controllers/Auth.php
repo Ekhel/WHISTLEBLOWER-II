@@ -27,17 +27,17 @@ class auth extends MX_Controller{
 				$data['sandi'] = $sandi;
 				$data['id_admin'] = $admin->id_admin;
 				$data['level'] = $admin->level;
-        $data['id_user'] = $admin->id_user;
+				$data['id_user'] = $admin->id_user;
 				$data['nama_lengkap'] = $admin->nama_lengkap;
 				$data['login'] = TRUE;
 				$this->session->set_userdata($data);
-        if ($this->session->userdata('level')=='1'){
+				if ($this->session->userdata('level')=='1'){
+					redirect('dashboard');
+				}
+				elseif ($this->session->userdata('level')=='2'){
+			//helper_log("login", "Login ke applikasi");
 				redirect('dashboard');
-			  }
-  			elseif ($this->session->userdata('level')=='2'){
-          //helper_log("login", "Login ke applikasi");
-  		  redirect('home');
-  			}
+				}
 			}
 			else {
 				$this->session->set_flashdata('message', 'Nama dan sandi anda salah');
