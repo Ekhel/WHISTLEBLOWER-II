@@ -79,10 +79,6 @@
                                 <ul class="attachment-menu-view">
                                     <li><a href="#"><i class="fa fa-paperclip"></i> attachments </a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-level-down"></i> Download all </a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-file-image-o" aria-hidden="true"></i> View all images </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -94,41 +90,8 @@
                                     <i class="fa fa-file"></i>
                                 </div>
                                 <div class="file-type-view">
-                                    <h5><a href="#">Document-file.doc</a></h5>
-                                    <p>Added: jun 18, 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="view-mail-file-list">
-                                <div class="view-file-in">
-                                    <i class="fa fa-file-image-o"></i>
-                                </div>
-                                <div class="file-type-view">
-                                    <h5><a href="#">Document-image.jpg</a></h5>
-                                    <p>Added: jun 18, 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="view-mail-file-list">
-                                <div class="view-file-in">
-                                    <i class="fa fa-file-video-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="file-type-view">
-                                    <h5><a href="#">Document-Video.mpv</a></h5>
-                                    <p>Added: jun 18, 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="view-mail-file-list">
-                                <div class="view-file-in">
-                                    <i class="fa fa-file-archive-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="file-type-view">
-                                    <h5><a href="#">Document-achive.zip</a></h5>
-                                    <p>Added: jun 18, 2018</p>
+                                    <h5><a href="http://localhost/frontend-sws/file/attachment/<?php echo $detail['file_path'] ?>" target="_blank">File Lampiran</a></h5>
+                                    <p>added <?php echo $detail['date_created'] ?></p>
                                 </div>
                             </div>
                         </div>

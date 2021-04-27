@@ -7,7 +7,6 @@ class M_pengaduan extends CI_Model{
     {
         $query = $this->db->query("SELECT * FROM tb_aduan
         LEFT JOIN tb_distrik ON tb_aduan.id_distrik = tb_distrik.id_distrik
-        LEFT JOIN tb_kampung ON tb_aduan.id_kampung = tb_kampung.id_kampung
         ORDER BY tb_aduan.date_created DESC ");
 
         return $query->result();
@@ -16,7 +15,6 @@ class M_pengaduan extends CI_Model{
     function aduan_pemeriksa(){
         $query = $this->db->query("SELECT * FROM tb_aduan
         LEFT JOIN tb_distrik ON tb_aduan.id_distrik = tb_distrik.id_distrik
-        LEFT JOIN tb_kampung ON tb_aduan.id_kampung = tb_kampung.id_kampung
         WHERE status_pemeriksa = 1
         ORDER BY tb_aduan.date_created DESC ");
         
@@ -27,7 +25,6 @@ class M_pengaduan extends CI_Model{
     {
         $query = $this->db->query("SELECT * FROM tb_aduan
         LEFT JOIN tb_distrik ON tb_aduan.id_distrik = tb_distrik.id_distrik
-        LEFT JOIN tb_kampung ON tb_aduan.id_kampung = tb_kampung.id_kampung
         WHERE tb_aduan.id_aduan = '$id_aduan' ");
 
         return $query->row_array();
