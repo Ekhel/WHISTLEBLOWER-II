@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
-                                <div class="header-top-menu tabl-d-n">
+                                <!--<div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
                                         <li class="nav-item dropdown">
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">API <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
@@ -76,7 +76,7 @@
                                         </li>
 
                                     </ul>
-                                </div>
+                                </div>!-->
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                 <div class="header-right-info">
