@@ -91,7 +91,7 @@
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
                                                 <li><a href="#"><span class="adminpro-icon adminpro-settings author-log-ic"></span>Akun</a>
                                                 </li>
-                                                <li><a href="<?php echo base_url()?>Auth/logout"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
+                                                <li><a href="<?php echo base_url()?>auth/logout"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
                                                 </li>
                                             </ul>
                                         </li>
